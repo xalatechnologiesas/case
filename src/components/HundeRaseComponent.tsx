@@ -41,7 +41,7 @@ export const HundeRaseComponent: FC = () => {
 
   return (
     <div className="hundeRaser">
-      <p>Hundraser</p>
+      <p className="component-title">Hundraser</p>
       <CustomSelect items={items} defaultTitle="Velg hunderaser" />
     </div>
   );

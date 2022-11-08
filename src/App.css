@@ -14,7 +14,16 @@ body {
 }
 
 .app {
-  
   height: 100vh;
   background: #E5E5E5;
+}
+
+.component-title { 
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 5px;
 }
