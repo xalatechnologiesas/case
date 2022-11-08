@@ -11,27 +11,32 @@ export const CustomSelect: FC<ISelectProps> = ({ items, defaultTitle }) => {
     setOpen((isOpen) => !isOpen);
   };
 
+  const onSelect = () => {
+    setOpen((isOpen) => !isOpen);
+  };
+
   return (
-    <div className="wrapper">
-      <div className="dropDown" onClick={onOpen}>
+    <div className="dropdown">
+      <div className="dropdown-btn" onClick={onOpen}>
         {defaultTitle}
+        <img className="arrow" src="./assets/arrow_down.png" alt="" />
       </div>
-      {open &&
+      <div className="dropdown-content">
+      { open &&
         items.map((item: ISelectItem) => {
           const { title, subTitle, image } = item;
           return (
-            <div className="content">
-              <div className="item">
+              <div className="dropdown-item" onClick={onSelect}>
                 <img className="image" src={image} alt="" />
                 <div className="captions">
                   <div className="title">{title}</div>
                   <div className="subTitle">{subTitle}</div>
                 </div>
               </div>
-            </div>
           );
         })}
-    </div>
+      </div>
+      </div>
   );
 };
 

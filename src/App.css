@@ -1,11 +1,20 @@
+html,
 body {
-  padding: 50px;
-  background: #E5E5E5;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.App {
-  width: 100%;
+body {
+  background: white;
   display: flex;
-  flex-direction: column;
-  align-content: flex-start;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.app {
+  
+  height: 100vh;
+  background: #E5E5E5;
 }
