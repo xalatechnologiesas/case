@@ -1,0 +1,96 @@
+.wrapper {
+  margin-top: 10px;
+}
+
+.dropDown {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 16px;
+	gap: 16px;
+	width: 535px;
+	height: 48px;
+	left: 771.61px;
+	top: 223.27px;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 16px;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 11px 15px;
+	gap: 15px;
+
+	width: 535px;
+	height: 75px;
+	background: #FFFFFF;
+}
+
+.item {
+    width: 366px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+    cursor: pointer;
+    position: absolute;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.image {
+	width: 70px;
+	background: #FBD960;
+	left: 15px;
+	top: 26.3px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	border-radius: 16px;
+}
+
+.captions {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 15px;
+	gap: 5px;
+	width: 470px;
+	height: 53px;
+	left: 177.4px;
+	/* Inside auto layout */
+	
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.title {
+	height: 24px;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #201F1F;
+}
+
+.subTitle {
+	height: 24px;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 24px;
+	
+	/* identical to box height */
+	color: #2E2D2D;
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
