@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import IBreed from "../models/IBreed";
 import ISelectItem from "../models/ISelectItem";
-import CustomSelect from "./CustomSelect";
+import CustomSelect from "../shared/CustomSelect";
 import BreedsService from "../services/BreedsService";
 
 export const HundeRaseComponent: FC = () => {
