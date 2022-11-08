@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react";
 import IBreed from "../models/IBreed";
-import { ISelectItem } from "../models/ISelectItem";
+import ISelectItem from "../models/ISelectItem";
 import CustomSelect from "./CustomSelect";
 import BreedsService from "../services/BreedsService";
 

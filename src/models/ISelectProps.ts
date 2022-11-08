@@ -1,6 +1,6 @@
-import { ISelectItem } from "./ISelectItem";
+import ISelectItem from "./ISelectItem";
 
-export interface ISelectProps {
+export default interface ISelectProps {
   items: ISelectItem[];
   defaultTitle: string;
 }

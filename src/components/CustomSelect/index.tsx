@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
-import { ISelectItem } from "../../models/ISelectItem";
-import { ISelectProps } from "../../models/ISelectProps";
+import ISelectItem from "../../models/ISelectItem";
+import ISelectProps from "../../models/ISelectProps";
 
 import "./CustomSelect.css";
 
