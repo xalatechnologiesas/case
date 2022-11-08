@@ -1,8 +1,8 @@
 import http from "../utils/http-client";
 import IBreed from "../models/IBreed";
 
-const getAll = () => {
-  return http.get<Array<IBreed>>("/breeds");
+const getAll = async () => {
+  return await http.get<Array<IBreed>>("/breeds");
 };
 
 const BreedsService = {
