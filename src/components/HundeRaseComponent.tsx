@@ -9,21 +9,21 @@ export const HundeRaseComponent: FC = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    const getBreeds = async () => {
+      setLoading(true);
+
+      await BreedsService.getAll()
+        .then((response: any) => {
+          generateSelectList(response.data);
+        })
+        .catch((e: Error) => {
+          console.log(e);
+          setLoading(false);
+        });
+    };
+
     getBreeds();
   }, []);
-
-  const getBreeds = () => {
-    setLoading(true);
-
-    BreedsService.getAll()
-      .then((response: any) => {
-        generateSelectList(response.data);
-      })
-      .catch((e: Error) => {
-        console.log(e);
-        setLoading(false);      
-      });
-  };
 
   const generateSelectList = (breeds: IBreed[]) => {
     const selectItems: ISelectItem[] = [];
